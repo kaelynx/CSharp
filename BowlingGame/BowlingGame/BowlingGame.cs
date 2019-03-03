@@ -30,13 +30,7 @@ namespace BowlingGame
                 } else
                 {
                     firstRoll = GetRandomNumber(min_, max_);
-                    if (firstRoll == 10)
-                    {
-                        secondRoll = 0;
-                    } else
-                    {
-                        secondRoll = GetRandomNumber(min_, (max_ - firstRoll));
-                    }
+                    secondRoll = (firstRoll == 10) ? 0 : secondRoll = GetRandomNumber(min_, (max_ - firstRoll));
                 }
                 if (LastTurn())
                 {
