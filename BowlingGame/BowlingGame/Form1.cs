@@ -51,7 +51,7 @@ namespace BowlingGame
             button4.Enabled = false;
             game.InitiateCheatMode();
             GamePlay();
-      
+
         }
 
         private void GutterBallClicked(object sender, EventArgs e)
